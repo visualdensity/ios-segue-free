@@ -13,7 +13,9 @@ class ThirdSubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Third Sub"
-        // Do any additional setup after loading the view.
+
+        let nextButton = UIBarButtonItem(title: "Next", style: UIBarButtonItemStyle.Plain, target: self, action: "goNext")
+        self.navigationItem.rightBarButtonItem = nextButton
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +36,10 @@ class ThirdSubViewController: UIViewController {
     }
     
     @IBAction func nextTapped(sender: AnyObject) {
+        goNext()
+    }
+    
+    func goNext() -> Void {
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("FourthSubView") as! FourthSubViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }

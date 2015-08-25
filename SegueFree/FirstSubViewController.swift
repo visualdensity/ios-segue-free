@@ -13,7 +13,10 @@ class FirstSubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "First Sub"
-        // Do any additional setup after loading the view.
+
+        //Add "Next" button to the current navigation bar
+        let nextButton = UIBarButtonItem(title: "Next", style: UIBarButtonItemStyle.Plain, target: self, action: "goNext")
+        self.navigationItem.rightBarButtonItem = nextButton
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,12 +25,16 @@ class FirstSubViewController: UIViewController {
     }
     
     @IBAction func nextTapped(sender: AnyObject) {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SecondSubView") as! SecondSubViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        goNext()
     }
 
     @IBAction func backTapped(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func goNext() {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SecondSubView") as! SecondSubViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     /*
