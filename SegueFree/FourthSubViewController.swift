@@ -45,6 +45,11 @@ class FourthSubViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    //showcasing the fact that you can push to _any_ views, really.
+    @IBAction func pushToFlashTapped(sender: AnyObject) {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("FlashCardView") as! FlashCardViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
     /*
     // MARK: - Navigation
