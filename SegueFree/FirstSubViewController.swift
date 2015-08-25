@@ -12,7 +12,7 @@ class FirstSubViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "First Sub"
         // Do any additional setup after loading the view.
     }
 

@@ -18,6 +18,7 @@
 		BBB5E9D81B8C3A580041290F /* SecondSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB5E9D71B8C3A580041290F /* SecondSubViewController.swift */; };
 		BBB5E9DA1B8C3A6B0041290F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB5E9D91B8C3A6B0041290F /* MainViewController.swift */; };
 		BBB5E9DC1B8C49C60041290F /* ThirdSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB5E9DB1B8C49C60041290F /* ThirdSubViewController.swift */; };
+		BBB5E9DE1B8C517B0041290F /* FourthSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB5E9DD1B8C517B0041290F /* FourthSubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		BBB5E9D71B8C3A580041290F /* SecondSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSubViewController.swift; sourceTree = "<group>"; };
 		BBB5E9D91B8C3A6B0041290F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BBB5E9DB1B8C49C60041290F /* ThirdSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdSubViewController.swift; sourceTree = "<group>"; };
+		BBB5E9DD1B8C517B0041290F /* FourthSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthSubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				BBB5E9D51B8C3A500041290F /* FirstSubViewController.swift */,
 				BBB5E9D71B8C3A580041290F /* SecondSubViewController.swift */,
 				BBB5E9DB1B8C49C60041290F /* ThirdSubViewController.swift */,
+				BBB5E9DD1B8C517B0041290F /* FourthSubViewController.swift */,
 				BBB5E9BA1B8C394F0041290F /* Images.xcassets */,
 				BBB5E9BC1B8C394F0041290F /* LaunchScreen.xib */,
 				BBB5E9B21B8C394F0041290F /* SegueFree.xcdatamodeld */,
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBB5E9D61B8C3A500041290F /* FirstSubViewController.swift in Sources */,
+				BBB5E9DE1B8C517B0041290F /* FourthSubViewController.swift in Sources */,
 				BBB5E9DC1B8C49C60041290F /* ThirdSubViewController.swift in Sources */,
 				BBB5E9D81B8C3A580041290F /* SecondSubViewController.swift in Sources */,
 				BBB5E9D41B8C3A420041290F /* FlashCardViewController.swift in Sources */,
@@ -429,6 +433,7 @@
 				BBB5E9CF1B8C394F0041290F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBB5E9D01B8C394F0041290F /* Build configuration list for PBXNativeTarget "SegueFreeTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +442,7 @@
 				BBB5E9D21B8C394F0041290F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

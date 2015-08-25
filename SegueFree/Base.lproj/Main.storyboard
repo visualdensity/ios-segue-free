@@ -111,14 +111,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csA-cn-Sp8">
-                                <rect key="frame" x="282" y="187" width="35" height="30"/>
+                                <rect key="frame" x="273" y="187" width="54" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="97M-l0-iIr"/>
                                     <constraint firstAttribute="width" constant="35" id="TV7-OI-2wE"/>
+                                    <constraint firstAttribute="width" constant="54" id="gm6-5a-LJM"/>
                                 </constraints>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="Dismiss">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TV7-OI-2wE"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="backTapped:" destination="epx-8z-EFH" eventType="touchUpInside" id="TB9-Hv-Xxi"/>
                                 </connections>
@@ -285,12 +291,36 @@
                                     <action selector="dismissTapped:" destination="BaB-LO-8Uq" eventType="touchUpInside" id="Nhd-UI-bmc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUz-qp-VKh">
+                                <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3nE-BT-Jud"/>
+                                    <constraint firstAttribute="height" constant="30" id="8qO-Q9-pRN"/>
+                                    <constraint firstAttribute="width" constant="54" id="FFF-Nn-3RA"/>
+                                    <constraint firstAttribute="width" constant="32" id="TnB-kJ-J30"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3nE-BT-Jud"/>
+                                        <exclude reference="FFF-Nn-3RA"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="nextTapped:" destination="BaB-LO-8Uq" eventType="touchUpInside" id="Ev1-PF-hPc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.85058622303777343" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="JV8-ZU-E1K" secondAttribute="centerX" id="1MN-Tr-zA4"/>
                             <constraint firstItem="TmZ-5u-a7D" firstAttribute="top" secondItem="JV8-ZU-E1K" secondAttribute="bottom" constant="39" id="7KE-MY-VJS"/>
+                            <constraint firstItem="JUz-qp-VKh" firstAttribute="top" secondItem="TmZ-5u-a7D" secondAttribute="bottom" constant="32" id="Gq6-NB-1Fo"/>
                             <constraint firstAttribute="centerX" secondItem="TmZ-5u-a7D" secondAttribute="centerX" id="KgJ-Lc-wIl"/>
+                            <constraint firstAttribute="centerX" secondItem="JUz-qp-VKh" secondAttribute="centerX" id="SRW-mq-42g"/>
                             <constraint firstItem="Y2y-bm-BU5" firstAttribute="top" secondItem="FFU-Zf-LvT" secondAttribute="bottom" constant="66" id="U7l-9a-Q73"/>
                             <constraint firstAttribute="centerX" secondItem="Y2y-bm-BU5" secondAttribute="centerX" id="WTu-hO-dip"/>
                             <constraint firstItem="JV8-ZU-E1K" firstAttribute="top" secondItem="Y2y-bm-BU5" secondAttribute="bottom" constant="38" id="qpc-k9-aeV"/>
@@ -300,6 +330,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZS-rL-YCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2349" y="824"/>
+        </scene>
+        <!--Fourth Sub View Controller-->
+        <scene sceneID="BrY-3o-FQX">
+            <objects>
+                <viewController storyboardIdentifier="FourthSubView" id="VWl-78-TPh" customClass="FourthSubViewController" customModule="SegueFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EIf-bv-PDc"/>
+                        <viewControllerLayoutGuide type="bottom" id="spm-Jj-H9G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bda-tE-Fpe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3a-bM-yMp">
+                                <rect key="frame" x="283" y="64" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="HpZ-it-8uf"/>
+                                    <constraint firstAttribute="height" constant="30" id="TeR-F8-mzy"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backTapped:" destination="VWl-78-TPh" eventType="touchUpInside" id="EmN-T1-NBS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkd-2S-ESJ">
+                                <rect key="frame" x="269" y="227" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="eow-a2-WBf"/>
+                                    <constraint firstAttribute="height" constant="30" id="zoB-Uv-OCQ"/>
+                                </constraints>
+                                <state key="normal" title="Flash Me">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flashTapped:" destination="VWl-78-TPh" eventType="touchUpInside" id="25U-xc-bU3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8Z-ZV-B8l">
+                                <rect key="frame" x="245" y="114" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="POf-PH-IFJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="qsw-FS-BY5"/>
+                                </constraints>
+                                <state key="normal" title="Back to Second">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backSecondTapped:" destination="VWl-78-TPh" eventType="touchUpInside" id="Jal-Ez-WRN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsX-Vq-ILh">
+                                <rect key="frame" x="257" y="169" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="Ft8-JD-D1S"/>
+                                    <constraint firstAttribute="height" constant="30" id="S7t-nf-Ff2"/>
+                                </constraints>
+                                <state key="normal" title="Back to First">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backFirstTapped:" destination="VWl-78-TPh" eventType="touchUpInside" id="CpW-Uh-YrF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3K-Ge-WOU">
+                                <rect key="frame" x="273" y="283" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="lr8-tt-Utd"/>
+                                    <constraint firstAttribute="height" constant="30" id="n4K-fT-aP4"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissTapped:" destination="VWl-78-TPh" eventType="touchUpInside" id="4fM-Fn-Ug9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.69590242454036266" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="X8Z-ZV-B8l" firstAttribute="top" secondItem="t3a-bM-yMp" secondAttribute="bottom" constant="20" id="9HI-iZ-c1B"/>
+                            <constraint firstAttribute="centerX" secondItem="t3a-bM-yMp" secondAttribute="centerX" id="FPQ-55-CP1"/>
+                            <constraint firstAttribute="centerX" secondItem="i3K-Ge-WOU" secondAttribute="centerX" id="Ipy-9N-mfV"/>
+                            <constraint firstItem="i3K-Ge-WOU" firstAttribute="top" secondItem="Pkd-2S-ESJ" secondAttribute="bottom" constant="26" id="Mh6-Cp-0TB"/>
+                            <constraint firstItem="Pkd-2S-ESJ" firstAttribute="top" secondItem="vsX-Vq-ILh" secondAttribute="bottom" constant="28" id="Obo-U5-dww"/>
+                            <constraint firstItem="vsX-Vq-ILh" firstAttribute="top" secondItem="X8Z-ZV-B8l" secondAttribute="bottom" constant="25" id="P2X-3D-LqW"/>
+                            <constraint firstAttribute="centerX" secondItem="Pkd-2S-ESJ" secondAttribute="centerX" id="YWb-Hu-lCE"/>
+                            <constraint firstAttribute="centerX" secondItem="X8Z-ZV-B8l" secondAttribute="centerX" id="irV-nJ-GAJ"/>
+                            <constraint firstItem="t3a-bM-yMp" firstAttribute="top" secondItem="EIf-bv-PDc" secondAttribute="bottom" constant="44" id="nxw-xD-S3I"/>
+                            <constraint firstAttribute="centerX" secondItem="vsX-Vq-ILh" secondAttribute="centerX" id="udc-aM-GUv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfr-Ss-5ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3123" y="824"/>
         </scene>
         <!--Flash Card View Controller-->
         <scene sceneID="ad9-FT-ylA">

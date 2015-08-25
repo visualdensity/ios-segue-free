@@ -1,5 +1,5 @@
 //
-//  SecondSubViewController.swift
+//  FourthSubViewController.swift
 //  SegueFree
 //
 //  Created by Wee Keat Chin on 25/08/2015.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SecondSubViewController: UIViewController {
+class FourthSubViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Second Sub"
+        self.title = "Fourth Sub"
         // Do any additional setup after loading the view.
     }
 
@@ -24,9 +24,16 @@ class SecondSubViewController: UIViewController {
     @IBAction func backTapped(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
     }
-
-    @IBAction func dismissTapped(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    
+    
+    @IBAction func backSecondTapped(sender: AnyObject) {
+        //back to a specific view in the navigation path
+        let vc = self.navigationController?.viewControllers[1] as! SecondSubViewController
+        self.navigationController?.popToViewController(vc, animated: true)
+    }
+    
+    @IBAction func backFirstTapped(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
     @IBAction func flashTapped(sender: AnyObject) {
@@ -34,11 +41,11 @@ class SecondSubViewController: UIViewController {
         self.presentViewController(vc, animated: true, completion: nil)
     }
     
-    @IBAction func nextTapped(sender: AnyObject) {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ThirdSubView") as! ThirdSubViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+    @IBAction func dismissTapped(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+
     /*
     // MARK: - Navigation
 

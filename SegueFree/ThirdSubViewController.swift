@@ -12,7 +12,7 @@ class ThirdSubViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Third Sub"
         // Do any additional setup after loading the view.
     }
 
@@ -33,6 +33,10 @@ class ThirdSubViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func nextTapped(sender: AnyObject) {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("FourthSubView") as! FourthSubViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
     /*
     // MARK: - Navigation
